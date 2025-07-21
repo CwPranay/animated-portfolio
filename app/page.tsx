@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-// import BackgroundCanvas from "@/components/BackgroundCanvas";
+import BackgroundCanvas from "@/components/BackgroundCanvas";
 
 export default function Home() {
   return (
@@ -11,12 +11,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className="bg-[#111] text-white font-['Nunito']">
-        <section className="flex flex-col h-screen">
+       <section  id="hero" className="relative flex flex-col min-h-screen overflow-hidden">
+
           <Header />
-          <div className="flex flex-1 items-center justify-center">
+          <BackgroundCanvas />
+
+          <div className="relative z-10 flex flex-1 items-center justify-center">
             <HeroSection />
           </div>
         </section>
+
 
       </main>
     </>
