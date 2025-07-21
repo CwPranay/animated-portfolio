@@ -14,7 +14,7 @@ export default function Home() {
        <section  id="hero" className="relative flex flex-col min-h-screen overflow-hidden">
 
           <Header />
-          <BackgroundCanvas />
+          <BackgroundCanvas  />
 
           <div className="relative z-10 flex flex-1 items-center justify-center">
             <HeroSection />

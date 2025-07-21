@@ -1,20 +1,12 @@
 "use client";
 
-import Particles from "@tsparticles/react";
-import { useCallback } from "react";
-import { loadAll } from "@tsparticles/all";
-import type { Engine } from "@tsparticles/engine";
-import particlesConfig from "./particles";
+import { Particles } from "@tsparticles/react";
 
 const BackgroundCanvas = () => {
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadAll(engine); // Load all plugins
-  }, []);
-
   return (
-    <div className="absolute inset-0 -z-10">
-      <Particles id="tsparticles" init={particlesInit} options={particlesConfig} />
-    </div>
+    
+    <div className="absolute inset-0 bg-green-900 opacity-50 z-0" />
+
   );
 };
 
