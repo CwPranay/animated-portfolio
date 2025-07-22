@@ -1,4 +1,4 @@
-// import SocialLinks from "./SocialLinks";
+import SocialLinks from "./SocialLinks";
 import { League_Spartan } from "next/font/google";
 import { Merriweather } from "next/font/google";
 
@@ -29,12 +29,12 @@ const HeroSection = () => (
 
 
 
-            <div className="z-10 relative left-[-45%] top-[-17%] text-left">
-                <h1 className={`${leagueSpartan.className} font-semibold text-4xl md:text-[64px]`}>
+            <div className="z-10 relative left-[-55%] top-[-10%] text-left">
+                <h1 className={`${leagueSpartan.className} font-semibold text-4xl  md:text-[70px]`}>
                     Pranay Gurav
                 </h1>
 
-                <p className={`${merriweather.className} font-medium pointer-events-none italic mt-4 mb-4`}>
+                <p className={`${merriweather.className} font-medium pointer-events-none italic mt-3 mb-4`}>
                     MERN Stack Developer
                 </p>
 
@@ -65,7 +65,7 @@ const HeroSection = () => (
                 </button>
             </div>
         </div>
-        {/* <SocialLinks /> */}
+        <SocialLinks />
     </div>
 );
 
