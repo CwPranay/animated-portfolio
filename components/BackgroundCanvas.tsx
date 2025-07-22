@@ -1,32 +1,50 @@
 "use client";
+import { useEffect } from "react";
 
-import { Particles } from "@tsparticles/react";
-import Ballpit from "./Ballpit"; // Adjust path if Ballpit is in a different directory
+declare global {
+  interface Window {
+    initMatterCanvas?: () => void;
+  }
+}
 
 const BackgroundCanvas = () => {
-  return (
-    <div className="absolute inset-0 z-0">
+  useEffect(() => {
+    const loadScript = (src: string) => {
+      return new Promise<void>((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = src;
+        script.async = true;
+        script.onload = () => resolve();
+        script.onerror = () => reject(`Failed to load script ${src}`);
+        document.body.appendChild(script);
+      });
+    };
 
+    // Load all scripts in order
+    const loadScripts = async () => {
+      try {
+        await loadScript("https://code.jquery.com/jquery-3.6.0.min.js");
+        await loadScript("https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js");
+        await loadScript("https://cdn.jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js");
+        await loadScript("https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js");
+        await loadScript("/matter-bg.js"); // Your local script in /public
 
-      <Ballpit
-        className="w-full h-full"
-        followCursor={true}
-        wallBounce={0.95}
-        gravity={0.07}
+        if (typeof window.initMatterCanvas === "function") {
+          window.initMatterCanvas();
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    };
 
-        count={100}
-        // 👈 Reduce the number of balls
-        colors={[
-          0x00cfff, // Cyan
-          0x007bff, // Blue
-          0xd8b4fe, // Soft lavender
-          0xfcc2ff, // Pinky purple
-          0xb2f5ea, // Aqua light
-          0xffffff, // White
-        ]} 
-      />
-    </div>
-  );
+    loadScripts();
+
+    return () => {
+      // No need to remove scripts unless you reload the component dynamically
+    };
+  }, []);
+
+  return <div id="wrapper-canvas" className="absolute h-screen w-screen top-0 left-0 inset-0 z-0" />;
 };
 
 export default BackgroundCanvas;
