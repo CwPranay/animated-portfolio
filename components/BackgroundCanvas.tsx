@@ -44,7 +44,11 @@ const BackgroundCanvas = () => {
     };
   }, []);
 
-  return <div id="wrapper-canvas" className="absolute h-screen w-screen top-0 left-0 inset-0 z-0" />;
+  return <div
+  id="wrapper-canvas"
+  className="fixed top-0 left-0 w-full h-full -z-0 "
+/>
+
 };
 
 export default BackgroundCanvas;

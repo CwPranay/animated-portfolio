@@ -31,17 +31,17 @@ function runMatter() {
   engine.world.gravity.scale = 0.1;
 
   // create renderer
-  var render = Render.create({
-    element: canvas,
-    engine: engine,
-    options: {
-      showVelocity: false,
-      width: dimensions.width,
-      height: dimensions.height,
-      wireframes: false,
-      background: "transparent",
-    },
-  });
+ var render = Render.create({
+  element: canvas,
+  engine: engine,
+  options: {
+    width: dimensions.width,
+    height: dimensions.height,
+    background: "transparent",
+    wireframes: false,
+  },
+});
+
 
   // create runner
   var runner = Runner.create();
@@ -151,7 +151,8 @@ function runMatter() {
   }
 
   // add mouse control
-  var mouse = Mouse.create(render.canvas);
+var mouse = Matter.Mouse.create(document.body);
+
 
   Events.on(engine, "afterUpdate", function () {
     if (!mouse.position.x) return;
@@ -202,14 +203,15 @@ function debounce(func, wait, immediate) {
 function setWindowSize() {
   const dimensions = {
     width: window.innerWidth,
-    height: window.innerHeight,
+    height: Math.max(document.body.scrollHeight, window.innerHeight),
   };
 
-  m.render.canvas.width = window.innerWidth;
-  m.render.canvas.height = window.innerHeight;
+  m.render.canvas.width = dimensions.width;
+  m.render.canvas.height = dimensions.height;
 
   return dimensions;
 }
+
 
 
 let m = runMatter();
