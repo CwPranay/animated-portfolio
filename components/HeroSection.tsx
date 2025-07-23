@@ -1,6 +1,7 @@
 import SocialLinks from "./SocialLinks";
 import { League_Spartan } from "next/font/google";
 import { Merriweather } from "next/font/google";
+import LatestWork from "./LatestWork";
 
 const merriweather = Merriweather({
     subsets: ["latin"],
@@ -63,6 +64,8 @@ const HeroSection = () => (
 
 
                 </button>
+                <LatestWork />
+
             </div>
         </div>
         <SocialLinks />
