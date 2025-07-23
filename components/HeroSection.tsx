@@ -17,7 +17,7 @@ const leagueSpartan = League_Spartan({
 });
 
 const HeroSection = () => (
-    <div className="flex w-[42vw] -mt-10 relative">
+    <div className="flex w-[42vw]  -mt-10 relative">
         <div className="w-full px-4  max-w-screen-xl mx-auto">
             {/* Hero SVGs */}
             <img
@@ -29,7 +29,7 @@ const HeroSection = () => (
 
 
 
-            <div className="z-10 relative left-[-55%] top-[-10%] text-left">
+            <div className="z-10 relative  left-[-55%] top-[-10%] text-left">
                 <h1 className={`${leagueSpartan.className} font-semibold text-4xl  md:text-[70px]`}>
                     Pranay Gurav
                 </h1>
