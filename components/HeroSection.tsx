@@ -30,7 +30,7 @@ const HeroSection = () => (
 
 
 
-            <div className="z-10 relative  left-[-60%] top-[-10%] text-left">
+            <div className="z-10 md:w-full w-[230px] relative  left-[-60%] top-[-10%] text-left">
                 <h1 className={`${leagueSpartan.className} font-semibold text-4xl  md:text-[70px]`}>
                     Pranay Gurav
                 </h1>

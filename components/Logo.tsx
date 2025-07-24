@@ -1,4 +1,4 @@
-const Logo = () => (
+const Logo = ({ className = '' }) => (
   <svg width="70" height="70" viewBox="0 0 406 368" fill="none" xmlns="http://www.w3.org/2000/svg" >
 <rect width="406" height="368" fill="url(#pattern0_0_1)"/>
 <defs>
