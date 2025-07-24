@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import BackgroundCanvas from "@/components/BackgroundCanvas";
+import LatestWorkSection from "@/components/LatestWorkSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
             <HeroSection />
           </div>
         </section>
+        <LatestWorkSection/>
 
 
       </main>

@@ -8,7 +8,7 @@ const SocialLinks = () => {
                         href="https://www.linkedin.com/in/anuragsinghbam/"
                         target="_blank"
                         rel="noreferrer"
-                        className="block w-6 h-6"
+                        className="block w-8 h-8"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ const SocialLinks = () => {
                         href="https://twitter.com/anuragsinghbam"
                         target="_blank"
                         rel="noreferrer"
-                        className="block w-6 h-6"
+                        className="block w-8 h-8"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ const SocialLinks = () => {
                         href="mailto:anuragsinghbam@gmail.com"
                         target="_blank"
                         rel="noreferrer"
-                        className="block w-6 h-6"
+                        className="block w-8 h-8"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

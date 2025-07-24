@@ -24,7 +24,7 @@ const HeroSection = () => (
             <img
                 src="/images/p.svg"
                 alt="Decorative SVG"
-                className="pointer-events-none absolute  left-[65%] top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] sm:w-[1000px]"
+                className="pointer-events-none absolute  left-[65%] top-1/3 -translate-x-1/2 -translate-y-1/2 w-[800px] sm:w-[1000px]"
               />
 
 

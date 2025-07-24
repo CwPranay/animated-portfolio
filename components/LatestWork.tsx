@@ -1,3 +1,4 @@
+"use client";
 const LatestWork = () => {
   return (
     <div className="relative left-[497px] top-[180px] self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]">
