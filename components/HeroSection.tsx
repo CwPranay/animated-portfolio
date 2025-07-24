@@ -24,13 +24,13 @@ const HeroSection = () => (
             <img
                 src="/images/p.svg"
                 alt="Decorative SVG"
-                className="pointer-events-none absolute  left-[60%] top-1/3 -translate-x-1/2 -translate-y-1/2 w-[800px] sm:w-[1000px]"
+                className="pointer-events-none absolute opacity-[27%] md:opacity-100  left-[60%] top-1/3 -translate-x-1/2 -translate-y-1/2 w-[800px] scale-200 md:scale-100"
               />
 
 
 
 
-            <div className="z-10 md:w-full w-[230px] relative  left-[-60%] top-[-10%] text-left">
+            <div className="z-10 md:w-full w-[230px] relative  left-[-69%] md:left-[-60%] top-[-5%] md:top-[-05%] text-left">
                 <h1 className={`${leagueSpartan.className} font-semibold text-4xl  md:text-[70px]`}>
                     Pranay Gurav
                 </h1>

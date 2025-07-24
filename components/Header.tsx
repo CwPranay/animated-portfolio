@@ -4,8 +4,8 @@ import ThemeToggler from "./ThemeToggler";
 import ContactIcons from "./ContactIcons";
 
 const Header = () => (
-  <header className="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto">
-    <Logo/>
+  <header className="z-10 pointer-events-none flex items-center  justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto">
+    <Logo className="h-[50px] w-[50px]"/>
     <div className="flex gap-4 pointer-events-auto">
       <ThemeToggler />
       <ContactIcons />

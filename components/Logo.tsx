@@ -1,5 +1,5 @@
 const Logo = ({ className = '' }) => (
-  <svg width="70" height="70" viewBox="0 0 406 368" fill="none" xmlns="http://www.w3.org/2000/svg" >
+  <svg className="scale-70 md:scale-100" width="70" height="70" viewBox="0 0 406 368" fill="none" xmlns="http://www.w3.org/2000/svg" >
 <rect width="406" height="368" fill="url(#pattern0_0_1)"/>
 <defs>
 <pattern id="pattern0_0_1" patternContentUnits="objectBoundingBox" width="1" height="1">

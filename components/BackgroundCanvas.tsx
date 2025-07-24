@@ -46,7 +46,7 @@ const BackgroundCanvas = () => {
 
   return <div
   id="wrapper-canvas"
-  className="fixed top-0 left-0 w-full h-full -z-0 overflow-hidden"
+  className="fixed top-0 left-0 w-full h-full md:block hidden -z-0 overflow-hidden"
 />
 
 };

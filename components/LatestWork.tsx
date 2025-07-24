@@ -11,7 +11,7 @@ const LatestWork = () => {
   };
 
   return (
-    <div className="relative left-0 md:left-[497px] top-[100px] md:top-[180px] self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]">
+    <div className="relative  md:left-[497px] left-[78px] md:top-[180px] top-[200px] self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]">
       <button onClick={goToWork} className="bg-[#4595eb] py-2 cursor-pointer px-4 md:px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative scale-100 md:scale-110 hover:scale-110 md:hover:scale-120 ease-in-out duration-100 group mb-16 md:mb-20">
         Latest Works
         <svg
