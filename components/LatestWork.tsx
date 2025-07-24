@@ -1,15 +1,25 @@
 "use client";
 const LatestWork = () => {
+  const goToWork = () => {
+    const element = document.querySelector('.latest-work');
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
-    <div className="relative left-[497px] top-[180px] self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]">
-      <button className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20">
+    <div className="relative left-0 md:left-[497px] top-[100px] md:top-[180px] self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]">
+      <button onClick={goToWork} className="bg-[#4595eb] py-2 cursor-pointer px-4 md:px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative scale-100 md:scale-110 hover:scale-110 md:hover:scale-120 ease-in-out duration-100 group mb-16 md:mb-20">
         Latest Works
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="44"
-          height="44"
+          width="36"
+          height="36"
           viewBox="0 0 100 100"
-          className="absolute rotate-90 left-1/2 -translate-x-1/2 top-11 group-hover:top-12 ease-in-out duration-100"
+          className="absolute rotate-90 left-1/2 -translate-x-1/2 top-10 md:top-11 group-hover:top-11 md:group-hover:top-12 ease-in-out duration-100"
         >
           <g transform="translate(0,-952.36218)">
             <path

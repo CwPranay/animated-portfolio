@@ -1,7 +1,7 @@
 const SocialLinks = () => {
     return (
-        <div className="text-white z-10 left-[380px] relative p-2">
-            <ul className="ml-auto space-y-6 text-[#b0b2c3] absolute right-8">
+        <div className="text-white z-10 left-0 md:left-[380px] relative p-2 mt-8 md:mt-0">
+            <ul className="flex md:block space-x-4 md:space-x-0 md:space-y-6 text-[#b0b2c3] static md:absolute md:right-8 justify-center">
                 {/* LinkedIn */}
                 <li>
                     <a
