@@ -1,8 +1,9 @@
 const SocialLinks = () => {
     return (
-        <div className="text-white z-10 left-[-155px]  md:left-[380px] top-[241px] md:top-[2px] relative p-2 mt-8 md:mt-0">
-            <ul className="flex md:block space-x-4 md:space-x-0 md:space-y-6 text-[#b0b2c3] static md:absolute md:right-8 justify-center">
-                {/* LinkedIn */}
+        <div className="text-white z-10  relative  bottom-2 left-1/2 transform -translate-x-1/2 p-2">
+            
+            <ul className="flex flex-col gap-4 space-x-4 md:space-x-0 md:space-y-6 text-[#b0b2c3] justify-center">
+                
                 <li>
                     <a
                         href="https://www.linkedin.com/in/anuragsinghbam/"
@@ -19,7 +20,7 @@ const SocialLinks = () => {
                         </svg>
                     </a>
                 </li>
-
+                
                 {/* Twitter */}
                 <li>
                     <a
@@ -37,7 +38,7 @@ const SocialLinks = () => {
                         </svg>
                     </a>
                 </li>
-
+                
                 {/* Email */}
                 <li>
                     <a

@@ -10,7 +10,6 @@ const merriweather = Merriweather({
     display: "swap",
 });
 
-
 const leagueSpartan = League_Spartan({
     subsets: ["latin"],
     weight: ["400", "500", "700"], // Adjust as needed
@@ -18,27 +17,24 @@ const leagueSpartan = League_Spartan({
 });
 
 const HeroSection = () => (
-    <div className="flex w-[42vw]  -mt-10 relative">
-        <div className="w-full px-4  max-w-screen-xl mx-auto">
+    <div className="flex w-[42vw] -mt-10 relative">
+        <div className="w-full px-4 max-w-screen-xl mx-auto">
             {/* Hero SVGs */}
             <img
                 src="/images/p.svg"
                 alt="Decorative SVG"
-                className="pointer-events-none absolute opacity-[27%] md:opacity-100  left-[60%] top-1/3 -translate-x-1/2 -translate-y-1/2 w-[800px] scale-200 md:scale-100"
-              />
-
-
-
-
-            <div className="z-10 md:w-full w-[230px] relative  left-[-69%] md:left-[-60%] top-[-5%] md:top-[-05%] text-left">
-                <h1 className={`${leagueSpartan.className} font-semibold text-4xl  md:text-[70px]`}>
+                className="pointer-events-none absolute opacity-[27%] md:opacity-100 left-[60%] top-1/3 -translate-x-1/2 -translate-y-1/2 w-[800px] scale-200 md:scale-100"
+            />
+            
+            <div className="z-10 md:w-full w-[230px] relative left-[-69%] md:left-[-60%] top-[-5%] md:top-[-05%] text-left">
+                <h1 className={`${leagueSpartan.className} font-semibold text-4xl md:text-[70px]`}>
                     Pranay Gurav
                 </h1>
-
+                
                 <p className={`${merriweather.className} font-medium pointer-events-none italic mt-3 mb-4`}>
                     MERN Stack Developer
                 </p>
-
+                
                 <button className="bg-[#4595eb] py-2 px-5 font-serif rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] mt-4 relative hover:scale-110 ease-in-out duration-100 group">
                     Contact Me
                     <svg
@@ -60,14 +56,15 @@ const HeroSection = () => (
                             />
                         </g>
                     </svg>
-
-
-
                 </button>
-                <LatestWork />
-
             </div>
         </div>
+        
+        {/* Move LatestWork outside the constrained container */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-full flex justify-center">
+            <LatestWork />
+        </div>
+        
         <SocialLinks />
     </div>
 );
